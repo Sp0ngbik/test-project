@@ -1,0 +1,23 @@
+1. Read and create app https://ru.reactjs.org/tutorial/tutorial.html#what-are-we-building
+2. Read:
+   • https://ru.reactjs.org/docs/hooks-state.html  
+   • https://ru.reactjs.org/docs/hooks-effect.html
+3. Create todo app :
+   • User can create, edit, delete, and toggle todo.
+   • Use antd lib: https://ant.design/
+4. Add navbar:
+   Use React-router-dom lib: https://reactrouter.com/
+   Pages: in progress, completed  
+   Change toggle logic
+5. Read about eslint, add configuration to vs code and project
+6. Read about mongoDb and Nodejs
+7. Create simple express server with mongoDb
+   Add route todo and methods:
+   GET: return todos from db
+   POST: create a new todo and save db
+   PUT: change completed status and update at db
+   DELETE: remove a todo from db
+8. Connect ui and server
+9. Read about redux
+10. Read about expo https://expo.dev/
+11. Create expo todo app and connect with server
