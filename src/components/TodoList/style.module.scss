@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  margin: 250px auto;
+  width: 400px;
+  flex-direction: column;
+}
+
+.normal {
+  margin: 10px 0;
+}
+.done {
+  margin: 10px 0;
+  color: green;
+  text-decoration: line-through;
+}
