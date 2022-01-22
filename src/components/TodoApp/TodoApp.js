@@ -30,7 +30,7 @@ const TodoApp = () => {
     };
     setArrList([...arrList].concat(objOfList));
   };
-
+  console.log(arrList);
   const editTodo = (id) => {
     const edit = [...arrList].map((list) => {
       if (list.id === id) {

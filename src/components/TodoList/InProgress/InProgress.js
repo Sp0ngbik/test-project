@@ -1,9 +1,15 @@
-const InProgress = (props) => {
-  // console.log(props);
+const InProgress = ({ stateApp }) => {
+  console.log(stateApp.allElements);
 
   return (
     <div>
-      <div>{props.title}</div>
+      <div>
+        {stateApp.allElements.map((el) => {
+          if (!el.checked) {
+            return <div key={el.id}>{el.title}</div>;
+          }
+        })}
+      </div>
     </div>
   );
 };
