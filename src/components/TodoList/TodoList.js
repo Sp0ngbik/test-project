@@ -26,14 +26,14 @@ const TodoList = ({ stateApp }) => {
       <Form
         onFinish={(el) => {
           stateApp.setAllElements((prev) => {
-            let test = [...prev];
-            test.push({
+            let data = [...prev];
+            data.push({
               checked: false,
               title: el.title,
-              id: test.length === 0 ? 1 : test.length + 1,
+              id: data.length === 0 ? 1 : data.length + 1,
             });
 
-            return test;
+            return data;
           });
         }}
       >
@@ -56,24 +56,24 @@ const TodoList = ({ stateApp }) => {
                 onChange={(e) => {
                   if (e.target.checked) {
                     stateApp.setCompletedElements((prev) => {
-                      let test = [...prev];
-                      test.push({
+                      let data = [...prev];
+                      data.push({
                         checked: true,
                         title: el.title,
-                        id: test.length + 1,
+                        id: data.length + 1,
                       });
 
-                      return test;
+                      return data;
                     });
                     stateApp.setAllElements((prev) => {
-                      let test = [...prev];
-                      for (let i = 0; i < test.length; i++) {
-                        let elem = test[i];
+                      let data = [...prev];
+                      for (let i = 0; i < data.length; i++) {
+                        let elem = data[i];
                         if (elem.id === el.id) {
                           elem.checked = true;
                         }
                       }
-                      return test;
+                      return data;
                     });
                   }
                 }}
