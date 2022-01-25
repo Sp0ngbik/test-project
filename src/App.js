@@ -3,14 +3,12 @@ import TodoList from "./components/TodoList/TodoList";
 import InProgress from "./components/TodoList/InProgress/InProgress";
 import Completed from "./components/TodoList/Completed/Completed";
 import { useState } from "react";
-import TodoApp from "./components/TodoApp/TodoApp";
 
 function App() {
   const [completedElements, setCompletedElements] = useState([]);
   const [allElements, setAllElements] = useState([]);
   return (
     <div>
-      {/* <TodoApp /> */}
       <Routes>
         <Route
           path="/"

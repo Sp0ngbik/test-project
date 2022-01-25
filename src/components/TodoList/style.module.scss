@@ -1,15 +1,13 @@
-.container {
+.mainBlock {
+  margin: 100px auto;
+  width: 500px;
   display: flex;
-  margin: 250px auto;
-  width: 400px;
   flex-direction: column;
 }
 
-.normal {
-  margin: 10px 0;
-}
-.done {
-  margin: 10px 0;
-  color: green;
-  text-decoration: line-through;
+.listBlock {
+  font-size: 18px;
+  margin: 20px 0;
+  display: flex;
+  width: 400px;
 }

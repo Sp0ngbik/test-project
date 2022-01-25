@@ -5,9 +5,7 @@ const InProgress = ({ stateApp }) => {
     <div>
       <div>
         {stateApp.allElements.map((el) => {
-          if (!el.checked) {
-            return <div key={el.id}>{el.title}</div>;
-          }
+          return !el.checked && <div key={el.id}>{el.title}</div>;
         })}
       </div>
     </div>
